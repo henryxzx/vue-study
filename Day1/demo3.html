@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>gg</title>
+</head>
+<body>
+    <div id="app">
+        <p>
+            <a :href="link">百度</a>
+        </p>
+        <button type="button" @click="addbtnfn">增加按钮</button>
+        <p>{{count}}</p>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+            data:{
+                link: "http://www.baidu.com",
+                count: 0
+            },
+            methods: {
+                addbtnfn: function(){
+                    this.count++
+                }
+            }
+    });
+
+</script>
+</html>
