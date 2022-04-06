@@ -16,3 +16,6 @@ https://vuejs.bootcss.com/guide/index.html
 - cha值表达式
 - 数据绑定与事件绑定
 
+## [Day2](./Day2/README.md)
+
+- 虚拟DOM和diff算法
