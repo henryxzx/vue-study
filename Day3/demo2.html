@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>一个对象ggg</title>
+</head>
+
+<body>
+    <div id="app">
+        {{title}}
+        <button type="button" @click="toUpCase">点我</button>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            title: '一个对象ggg',
+        },
+        methods:{
+            toUpCase: function(){
+                return this.title.toLocaleUpperCase()
+            }
+        }
+    })
+</script>
+
+</html>

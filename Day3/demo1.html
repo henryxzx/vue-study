@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>标题</title>
+</head>
+
+<body>
+    <div id="app">
+        <table>
+            <tr>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>电话</th>
+            </tr>
+            <tr v-for="(user,i) in users">
+                <td>{{i+1}}</td>
+                <td v-for="value in user">{{value}}</td>
+                <!-- <td></td>
+            <td></td>
+            <td></td> -->
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            users: [{
+                name: '小明',
+                age: 20,
+                tel: '111111111111'
+            },
+            {
+                name: '小明1',
+                age: 21,
+                tel: '111111111112'
+            },
+            {
+                name: '小明2',
+                age: 22,
+                tel: '111111111113'
+            },
+            ]
+        }
+    })
+
+</script>
+
+</html>
